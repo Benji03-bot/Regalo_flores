@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Un bouquet para Jimena 🌻</title>
+<style>
+:root{--cream:#fffaf0;--yellow:#f6c64a;--gold:#b97908;--green:#5d7d55;--ink:#493d2c}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:radial-gradient(circle at 50% 35%,#fff3bc 0,transparent 30%),linear-gradient(145deg,#fffaf0,#f9f2dc);overflow-x:hidden}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:28px}.scene{width:min(960px,100%);text-align:center}
+.top{opacity:0;animation:fade .9s 1.4s forwards}.top h1{font-size:clamp(34px,6vw,64px);color:var(--gold);margin:10px}.top p{font-size:19px;line-height:1.6;max-width:650px;margin:0 auto}
+@keyframes fade{to{opacity:1}}
+.bouquet{height:400px;position:relative;margin:5px auto 0;max-width:650px}
+.stems{position:absolute;left:50%;bottom:20px;width:7px;height:260px;background:linear-gradient(#6b914f,#42623e);transform:translateX(-50%) rotate(4deg);border-radius:10px;box-shadow:35px 20px 0 -1px #5c8149,-40px 25px 0 -1px #527546}
+.leaf{position:absolute;width:100px;height:38px;background:#668c50;border-radius:100% 0 100% 0;opacity:0;animation:leafIn .7s forwards}
+.l1{left:30%;bottom:110px;transform:rotate(20deg);animation-delay:1.8s}.l2{right:29%;bottom:145px;transform:scaleX(-1) rotate(20deg);animation-delay:2s}.l3{left:36%;bottom:180px;transform:rotate(-15deg);animation-delay:2.2s}
+@keyframes leafIn{to{opacity:1}}
+.flower{position:absolute;font-size:78px;opacity:0;filter:drop-shadow(0 7px 5px #8b641d30);animation:flowerIn .9s cubic-bezier(.2,.8,.2,1) forwards}
+.f1{left:28%;top:65px;animation-delay:.25s}.f2{left:43%;top:18px;font-size:92px;animation-delay:.55s}.f3{left:57%;top:70px;animation-delay:.8s}.f4{left:36%;top:125px;font-size:68px;animation-delay:1.05s}.f5{left:53%;top:135px;font-size:68px;animation-delay:1.25s}
+@keyframes flowerIn{from{opacity:0;transform:scale(.1) translateY(45px) rotate(-30deg)}to{opacity:1;transform:scale(1) translateY(0) rotate(0)}}
+.message{opacity:0;transform:translateY(20px);animation:messageIn 1s 2.7s forwards;background:#fffdf8dd;border:1px solid #edd58f;border-radius:28px;padding:30px 25px;box-shadow:0 20px 60px #765a1d18;max-width:720px;margin:0 auto}
+@keyframes messageIn{to{opacity:1;transform:none}}
+.message h2{color:#a86e08;margin:0 0 12px;font-size:30px}.message p{font-size:18px;line-height:1.75;margin:0}
+.signature{margin-top:18px;color:var(--green);font-size:16px}
+.actions{margin-top:25px;opacity:0;animation:fade .8s 3.3s forwards}.btn{display:inline-block;margin:5px;padding:12px 20px;border-radius:999px;background:#f7c948;color:#4b3811;text-decoration:none;font:700 13px Arial,sans-serif}
+.petal{position:fixed;width:10px;height:15px;background:#f5c33f;border-radius:100% 0 100% 0;opacity:.35;animation:fall 8s linear infinite;z-index:-1}
+@keyframes fall{from{transform:translateY(-10vh) rotate(0)}to{transform:translateY(110vh) rotate(360deg)}}
+@media(max-width:650px){.bouquet{height:350px}.flower{font-size:57px}.f2{font-size:70px}.f4,.f5{font-size:53px}.f1{left:18%}.f2{left:36%}.f3{left:58%}}
+</style></head>
+<body>
+<script>for(let i=0;i<18;i++){let p=document.createElement('span');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.animationDelay=-Math.random()*8+'s';p.style.animationDuration=6+Math.random()*6+'s';document.body.appendChild(p)}</script>
+<div class="wrap"><main class="scene">
+<div class="top"><div>🌼 · 🌻 · 🌼</div><h1>Un bouquet para Jimena</h1><p>Un detalle sencillo para alegrarte un poquito el día.</p></div>
+<div class="bouquet">
+<div class="stems"></div><div class="leaf l1"></div><div class="leaf l2"></div><div class="leaf l3"></div>
+<div class="flower f1">🌼</div><div class="flower f2">🌻</div><div class="flower f3">🌼</div><div class="flower f4">🌻</div><div class="flower f5">🌼</div>
+</div>
+<section class="message">
+<h2>Para ti, Jimena 💛</h2>
+<p>Estamos empezando a conocernos, así que no quería hacer algo demasiado grande. Solo quería aprovechar este día para regalarte un pequeño detalle, sacarte una sonrisa y decirte que me está gustando compartir estos pequeños momentos contigo.</p>
+<div class="signature">Espero que te guste 🌻</div>
+<div class="actions"><a class="btn" href="index.html">Volver al inicio</a></div>
+</section>
+</main></div>
+</body></html>
